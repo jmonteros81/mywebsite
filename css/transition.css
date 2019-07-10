@@ -1,0 +1,48 @@
+.div1{
+    width: 100px;
+    /* height: auto; */
+    height: red;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    /* padding-top: 4px; */
+    transition: width 2s, background-color 5s,transform 2s;
+}
+/* .div1:hover{
+    width: 200px;
+    background-color: rgb(211, 224, 211);
+} */
+
+.div1:hover{
+    width: 200px;
+    background-color: rgb(211, 224, 211);
+    transform: skewX(-20deg);
+}
+
+.div2{
+    width: 100px;
+    height:100px;
+    /* height: auto; */
+    height: red;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    /* padding-top: 4px; */
+    /* transition: width 2s, background-color 5s,transform 2s; */
+    transition: all 2s;
+}
+/* .div1:hover{
+    width: 200px;
+    background-color: rgb(211, 224, 211);
+} */
+
+.div2:hover{
+    width: 200px;
+    background-color: rgb(211, 224, 211);
+    /* transform: rotate(360deg); */
+    transform: rotateY(360deg);
+    margin-left: 200px;
+    width: 200px;
+    height:200px;
+    font-size:40px;
+}

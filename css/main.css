@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #a8a634;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: cyan;
+    padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: Arial;
+    color:crimson;
+    font-size: 40px;
+}
+/* section:after{
+    content: "";
+    display: table;
+    clear: left;
+} */
+/* Style for Footer */
+
+article{
+    float:left;
+    padding: 20px;
+    width: 70%;
+    background-color: green;
+    height: 300px;
+}
+
+footer{
+    clear: left;
+    background-color:rgb(251, 255, 0);
+    padding: 10px;
+    text-align: center;
+    color:rgb(71, 10, 10)
+}
+/* Making our Layaot Responsive */
+@media(max-width:600px){
+    nav,article{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.nav{
+    list-style: none;
+}
+.nav>li>a{
+    /* next style is to remove underline from the line, ctrl k+c ctrl k+u */
+    text-decoration: none;
+    background-color: lightcyan;
+    border: solid 2px black;
+    border-radius: 5px 0px 5px;
+    padding: 5px;
+}
+.nav>li{
+    float: left;
+    margin-right: 10px;
+    
+
+}
+
+.nav>li>a:hover{
+    background-color: lightcoral;
+    font-size: 20px;
+    border: solid 2px red;
+    box-shadow: 5px 5px 5px green;
+    
+    
+}
+
+.subnav{
+    list-style-type: none;
+    padding: 0px;
+    background-color: antiquewhite;
+    border: solid 1px black;
+    display: none;
+}
+/* you can reemplace .nav>li>ul */
+.subnav>li>a{
+    text-decoration: none;   
+}
+
+.subnav>li{
+    margin-bottom: 10px;
+}
+.nav>li:hover>.subnav{
+    display: block;
+}
